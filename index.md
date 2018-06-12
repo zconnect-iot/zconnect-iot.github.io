@@ -8,7 +8,7 @@ entirely new product with the endless possibilities that connected devices
 unlock.
 
 <div class="row-of-boxes">
-  <div class="box" markdown="1">
+<div class="box"><div markdown="1">
 
 ### Django App
 
@@ -19,10 +19,10 @@ backend for your connected product. Built-in functionality for:
 - storing and aggregating time-series data
 - managing users, organizations and billing
 
+</div>
 <a class="btn">Learn more</a>
-
-  </div>
-  <div class="box" markdown="1">
+</div>
+<div class="box"><div markdown="1">
 
 ### Frontend Framework
 
@@ -33,9 +33,9 @@ development of web interfaces and apps.
 React Native applications. **zconnect-web** is a flexible and powerful
 collection of React components for quickly building UIs.
 
+</div>
 <a class="btn">Learn more</a>
-
-  </div>
+</div>
 </div>
 
 
@@ -80,8 +80,8 @@ blocks.
 
 ## zconnect-web-template
 
-This repo is designed to make it very easy to get started with a web-app based
-on ZConnect. ...
+A "ZConnect Quickstart" designed to make it very easy to get started on a
+web-app built with ZConnect.
 
 - key point about the repo
 - another key point or feature
