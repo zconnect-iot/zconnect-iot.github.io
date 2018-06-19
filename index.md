@@ -26,12 +26,11 @@ backend for your connected product. Built-in functionality for:
 
 ### Frontend Framework
 
-The ZConnect front-end libraries, built in React, enable extremely fast
-development of web interfaces and apps.
+The ZConnect front-end libraries, built with React and Redux to enable extremely fast
+development of web interfaces and apps
 
-**zconnect-js** provides core functionality for use across React and
-React Native applications. **zconnect-web** is a flexible and powerful
-collection of React components for quickly building UIs.
+- **zconnect-js** provides core functionality for use across React and React Native applications
+- **zconnect-web** is a flexible and powerful collection of React components for quickly building UIs.
 
 </div>
 <a class="btn">Learn more</a>
@@ -55,11 +54,10 @@ The core of ZConnect, built with Django for an excellent developer experience.
 
 ## zconnect-js
 
-The core libraries to manage communication with with ZConnect API, for use with
-React and React Native.
+Provides middleware, actions, selectors and utilities for connecting to ZConnect API. Integrates with the redux store in React and React-Native apps. Consists of:
 
+- custom api interaction layer
 - authentication logic
-- api interactions (sagas, selectors, actions and utilities)
 
 <a class="btn" href="https://github.com/zconnect-iot/zconnect-js">
   GitHub
@@ -67,12 +65,12 @@ React and React Native.
 
 ## zconnect-web
 
-Built ZConnect web-apps faster with a set of intiutive and easy-to-use building
+Build ZConnect web-apps faster with a set of intiutive and easy-to-use building
 blocks.
 
 - layout components including navbars, interactive panels, forms and controls
-- dashboard components including dynamic graphs and summary panels
-- includes a sample web-app demonstrating use of many of the components
+- api connected components including time series graphs and device activity streams
+- easy theming using scss vars or full customisation with classnames
 
 <a class="btn" href="https://github.com/zconnect-iot/zconnect-web">
   GitHub
@@ -83,9 +81,9 @@ blocks.
 A "ZConnect Quickstart" designed to make it very easy to get started on a
 web-app built with ZConnect.
 
-- key point about the repo
-- another key point or feature
-- something else important
+- demos the usage of the available components
+- shows how the style can be customised
+- can be used as a starting point for a new project
 
 <a class="btn" href="https://github.com/zconnect-iot/zconnect-web-template">
   GitHub
