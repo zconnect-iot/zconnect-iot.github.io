@@ -75,6 +75,9 @@ blocks.
 <a class="btn" href="https://github.com/zconnect-iot/zconnect-web">
   GitHub
 </a>
+<a class="btn" href="/styleguide">
+  Component Guide
+</a>
 
 ## zconnect-web-template
 
