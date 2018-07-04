@@ -41,7 +41,7 @@ development of web interfaces and apps
 
 A typical IoT deployment is devided into three main parts: the IoT platform, the devices and the interfaces to interact with the system. In Zconnect, the IoT platform can be built on top of `zconnect-django`, the devices communicate with the platform over MQTT and the interfaces are built in React or React Native using `zconnect-js` and `zconnect-web`. 
 
-<img style="display: block; margin: 0 auto; width: 600px;" src="/assets/system-diagram.png" alt="Zconnect System Diagram" >
+<img style="display: block; margin: 0 auto; width: 800px;" src="/assets/system-diagram.png" alt="Zconnect System Diagram" >
 
 Any of the parts can be used independently of the others, since they interact via simple APIs. However, the components are designed to work together so that you can quickly and easily build and IoT system with an interface made from reusable components.
 
@@ -55,7 +55,7 @@ Any of the parts can be used independently of the others, since they interact vi
   React Component Guide
 </a>
 
-# Repositories
+# Core Repositories
 
 ## zconnect-django
 
@@ -65,9 +65,10 @@ The core of ZConnect, built with Django for an excellent developer experience.
 - provides a complete RESTful HTTP API
 - optional modules for billing and time-series data
 
-<span class="btn disabled">
-  Coming soon
-</span>
+<a href="https://github.com/zconnect-iot/zconnect-django" class="btn">
+  View on GitHub
+</a>
+
 
 ## zconnect-js
 
@@ -77,8 +78,9 @@ Provides middleware, actions, selectors and utilities for connecting to ZConnect
 - authentication logic
 
 <a class="btn" href="https://github.com/zconnect-iot/zconnect-js">
-  GitHub
+  View on GitHub
 </a>
+
 
 ## zconnect-web
 
@@ -90,11 +92,15 @@ blocks.
 - easy theming using scss vars or full customisation with classnames
 
 <a class="btn" href="https://github.com/zconnect-iot/zconnect-web">
-  GitHub
+  View on GitHub
 </a>
 <a class="btn" href="/styleguide">
   Component Guide
 </a>
+
+
+# Testing and Demo Repositories
+
 
 ## zconnect-web-template
 
@@ -106,7 +112,60 @@ web-app built with ZConnect.
 - can be used as a starting point for a new project
 
 <a class="btn" href="https://github.com/zconnect-iot/zconnect-web-template">
-  GitHub
+  View on GitHub
 </a>
 
 
+## zconnect-django-demo
+
+An example IoT platform built on `zconnect-django`.
+
+<span class="btn disabled">
+  Coming soon
+</span>
+
+
+## demo-virtual-docker-compose
+
+A complete IoT system demo built using docker.
+
+- an instance of `zconnect-django-demo` built using `zconnect-django`
+- an instance of `zconnect-web-tempalte` built using `zconnect-js` and `zconnect-web`
+- a device emulator, including a visual front-end to see and set device state
+- a mock MQTT broker using `ibm-iot-emulator`
+
+<span class="btn disabled">
+  Coming soon
+</span>
+
+
+## ibm-iot-emulator
+
+A mock for the IBM IoT platform for easier testing that doesn't pollute live
+data.
+
+- hosts an MQTT broker which acts in the same way as the IBM MQTT broker
+- hosts an API which emulates the IBM IoT API
+- hosted in a docker container to give high portability.
+
+<a class="btn" href="https://github.com/zconnect-iot/ibm-iot-emulator">
+  View on GitHub
+</a>
+
+
+## device-simulator-frontend
+
+A simple interface which lets you interact with a virtual device that is
+connected to the Zconnect platform.
+
+<a class="btn" href="https://github.com/zconnect-iot/device-simulator-frontend">
+  View on GitHub
+</a>
+
+## device-simulator-backend
+
+A simulated device for use with `device-simlator-frontend`.
+
+<a class="btn" href="https://github.com/zconnect-iot/device-simulator-backend">
+  View on GitHub
+</a>
