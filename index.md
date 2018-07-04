@@ -37,6 +37,23 @@ development of web interfaces and apps
 </div>
 </div>
 
+# System overview
+
+A typical IoT deployment is devided into three main parts: the IoT platform, the devices and the interfaces to interact with the system. In Zconnect, the IoT platform can be built on top of `zconnect-django`, the devices communicate with the platform over MQTT and the interfaces are built in React or React Native using `zconnect-js` and `zconnect-web`. 
+
+<img style="display: block; margin: 0 auto; width: 600px;" src="/assets/system-diagram.png" alt="Zconnect System Diagram" >
+
+Any of the parts can be used independently of the others, since they interact via simple APIs. However, the components are designed to work together so that you can quickly and easily build and IoT system with an interface made from reusable components.
+
+<a class="btn" href="/apidocs">
+  HTTP API specs
+</a>
+<span class="btn disabled">
+  MQTT specs (coming soon)
+</span>
+<a class="btn" href="/styleguide">
+  React Component Guide
+</a>
 
 # Repositories
 
@@ -48,9 +65,9 @@ The core of ZConnect, built with Django for an excellent developer experience.
 - provides a complete RESTful HTTP API
 - optional modules for billing and time-series data
 
-<a class="btn" href="#" disabled>
+<span class="btn disabled">
   Coming soon
-</a>
+</span>
 
 ## zconnect-js
 
@@ -91,3 +108,5 @@ web-app built with ZConnect.
 <a class="btn" href="https://github.com/zconnect-iot/zconnect-web-template">
   GitHub
 </a>
+
+
