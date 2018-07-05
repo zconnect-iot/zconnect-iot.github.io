@@ -39,7 +39,7 @@ development of web interfaces and apps
 
 # System overview
 
-A typical IoT deployment is devided into three main parts: the IoT platform, the devices and the interfaces to interact with the system. In Zconnect, the IoT platform can be built on top of `zconnect-django`, the devices communicate with the platform over MQTT and the interfaces are built in React or React Native using `zconnect-js` and `zconnect-web`. 
+A typical IoT deployment is devided into three main parts: the IoT platform, the devices and the interfaces to interact with the system. In Zconnect, the IoT platform can be built on top of `zconnect-django`, the devices communicate with the platform over MQTT and the interfaces are built in React or React Native using `zconnect-js` and `zconnect-web`.
 
 <img style="display: block; margin: 0 auto; width: 800px;" src="/assets/system-diagram.png" alt="Zconnect System Diagram" >
 
@@ -120,12 +120,12 @@ web-app built with ZConnect.
 
 An example IoT platform built on `zconnect-django`.
 
-<span class="btn disabled">
-  Coming soon
-</span>
+<a class="btn" href="https://github.com/zconnect-iot/zconnect-django-demo">
+  View on GitHub
+</a>
 
 
-## demo-virtual-docker-compose
+## zconnect-system-demo
 
 A complete IoT system demo built using docker.
 
@@ -134,9 +134,9 @@ A complete IoT system demo built using docker.
 - a device emulator, including a visual front-end to see and set device state
 - a mock MQTT broker using `ibm-iot-emulator`
 
-<span class="btn disabled">
-  Coming soon
-</span>
+<a class="btn" href="https://github.com/zconnect-iot/zconnect-system-demo">
+  View on GitHub
+</a>
 
 
 ## ibm-iot-emulator
@@ -149,6 +149,15 @@ data.
 - hosted in a docker container to give high portability.
 
 <a class="btn" href="https://github.com/zconnect-iot/ibm-iot-emulator">
+  View on GitHub
+</a>
+
+
+## zconnect-mqtt-auth
+
+A mosquitto Plugin authorising devices used by ibm-iot-emulator
+
+<a class="btn" href="https://github.com/zconnect-iot/zconnect-mqtt-auth">
   View on GitHub
 </a>
 
